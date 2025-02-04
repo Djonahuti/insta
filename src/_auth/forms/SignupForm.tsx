@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { useForm } from "react-hook-form"
 import { SignupValidation } from "@/lib/validation"
 import { z } from "zod"
-import { Loader } from "lucide-react"
+import Loader from "@/components/shared/Loader"
 import { Link, useNavigate } from "react-router-dom"
 import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/AuthContext"
@@ -56,7 +56,7 @@ const SignupForm = () => {
       if(isLoggedIn) {
         form.reset();
 
-        navigate('./')
+        navigate('/')
       } else {
         return toast({title: "Sign up failed. Please try again"})
       }
