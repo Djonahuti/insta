@@ -29,7 +29,7 @@ const LeftSidebar = () => {
                     <p className='body-bold'>
                         {user.name}
                     </p>
-                    <p className='small-regular text-light-3'>
+                    <p className='small-regular text-cyan-700'>
                         @{user.username}
                     </p>
                 </div>

@@ -68,7 +68,7 @@ const SignupForm = () => {
           <img src="/assets/images/instavlog.png" alt="logo" />
 
           <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Create a New Account</h2>
-          <p className="text-light-3 small-medium md:base-regular">To use Insta Vlog, please enter your details</p>
+          <p className="text-cyan-700 small-medium md:base-regular">To use Insta Vlog, please enter your details</p>
         
 
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5 w-full mt-4">
